@@ -341,7 +341,7 @@ footer ul li a {
 
 /***********************************media******************************************/
 
-@media screen and (min-width:1200px {
+@media screen and (min-width:1200px) {
     .box {
         grid-column: 2/6;
     }
