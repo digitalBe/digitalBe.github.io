@@ -278,7 +278,7 @@ nav ul li a {
     grid-template-rows: 1fr 1fr;
     grid-gap: 3em;
     justify-content: center;
-    background-color: rgb(212, 212, 212);
+    background-color: rgb(28, 29, 29);
     padding: 2em;
     border-radius: 20px;
 }
