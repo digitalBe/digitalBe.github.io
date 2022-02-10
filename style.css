@@ -613,6 +613,10 @@ footer {
     nav ul li:last-of-type::before {
         display: none;
     }
+    
+    .two .container {
+        font-size: 1.5em;
+    }
 
 }
 
@@ -636,5 +640,11 @@ footer {
 
     #email {
         margin-bottom: 0;
+    }
+}
+
+@media screen and (max-height: 350px) {
+    #cube {
+        height: 100vh;
     }
 }
