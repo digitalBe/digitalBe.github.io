@@ -317,11 +317,19 @@ footer ul li a {
     .box.one {
         height: 110%;
     }
+    
+    .box {
+        height: initial;
+    }
 }
 
 @media screen and (max-height: 500px) {
 
     .box.one {
         height: 110%;
+    }
+    
+    .box {
+        height: initial;
     }
 }
