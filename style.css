@@ -391,6 +391,10 @@ footer {
 
 /***********************************media****************************************/
 
+@media screen and (min-width:1000px) {
+    
+    rid-template-rows: 110vh 100vh 100vh 100vh;
+
 @media screen and (max-width:844px) {
 
     nav {
