@@ -104,7 +104,7 @@ nav a {
 .box {
     display: grid;
     align-items: center;   
-    grid-template-columns: 1fr 1fr;
+    justify-content: center;
 }
 
 .one {
@@ -136,6 +136,7 @@ form {
     grid-template-rows: auto .8rem 3rem .8rem 3rem auto;
     margin: 1rem 2.5rem;
     grid-gap: 1rem;
+    max-width: 700px;
 }
 
 form input, form h1, label, #submit {
