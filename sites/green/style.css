@@ -13,8 +13,6 @@ body {
     font-family: Helvetica, Arial, sans-serif;
     color: aliceblue;
     position: relative;
-    scroll-snap-type: y mandatory;
-
 }
 
 h1 {
@@ -106,7 +104,6 @@ nav a {
 
 .box {
     min-height: 100vh;
-    scroll-snap-align: start;
 }
 
 .main {
@@ -135,6 +132,10 @@ nav a {
 
 .card, .maincard {
     padding: 4em; 
+}
+
+.maincard {
+    max-width: 500px;
 }
 
 
