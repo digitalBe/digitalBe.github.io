@@ -166,7 +166,7 @@ aside a:hover {
     grid-column: 1 / 5;
     margin: 1rem 2.5rem;
     position: relative;
-    max-width: 720px;
+    max-width: 900px;
 }
 
 .box h1 {
@@ -340,6 +340,16 @@ footer ul li a {
 }
 
 /***********************************media******************************************/
+
+@media screen and (min-width:1200px {
+    .box {
+        grid-column: 2/6;
+    }
+    
+    form {
+        grid-column: 2/6;
+    }
+}
 
 @media screen and (max-width:800px) {
 
