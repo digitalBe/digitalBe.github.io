@@ -1,0 +1,533 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    color: aliceblue;
+    position: relative;
+    z-index: 10;
+    background-color: #1f324b;
+}
+
+nav {
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: end;
+    background-color: #1f324b;
+    padding: 1em;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    position: fixed;
+    z-index: 5;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    padding: .8em;
+    margin-right: 2rem;
+    display: inline-flex;
+    position: relative;
+}
+
+nav a {
+    align-items: center;
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li:hover a {
+    color: rgb(23, 160, 137);
+}
+
+#toggle {
+    display: none;
+}
+
+.hamburger {
+    z-index: 5;
+    margin-top: 13px;
+    cursor: pointer; 
+    display: none;
+}
+  
+.hamburger div {
+    position: relative;
+    width: 2em;
+    height: 1px;
+    background-color: aliceblue;
+    margin-top: 7px;
+    margin-right: 2rem;
+    transition: all 0.3s ease-in-out;
+}
+
+#toggle:checked + .hamburger .top-bun {
+    transform: rotate(-45deg);
+    margin-top: 8px;
+  }
+  #toggle:checked + .hamburger .bottom-bun {
+    opacity: 0;
+    transform: rotate(45deg);
+  }
+  #toggle:checked + .hamburger .meat {
+    transform: rotate(45deg);
+    margin-top: -1px;
+  }
+
+/**************************************main*****************************************/
+
+.landing {
+    height: 100vh;
+    background-color: rgb(214, 213, 226);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    clip-path: ellipse(83% 50% at 57% 32%);
+}
+
+.landing h1 {
+    padding-bottom: .5rem;
+    color: #1f324b;
+}
+
+.landing p {
+    padding-bottom: 1rem;
+    color: #1f324b;
+}
+
+.landing a {
+    border: 2px solid #1f324b;
+    background-color: transparent;
+    padding: .8em 1.5em;
+    cursor: pointer;
+    text-decoration: none;
+    color: #1f324b;
+}
+
+.main {
+    background-color: #1f324b;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:space-around;
+}
+
+.figures {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 0 2rem;
+    align-items: end;
+    grid-gap: 5rem;
+}
+
+.figures p {
+    padding: 1em .5em;
+    text-align: center;
+}
+
+.figure {
+    display: flex;
+    flex-direction: column;
+}
+
+.main a {
+    background-color: transparent;
+    color: rgb(214, 213, 226);
+    padding: .3em 1.2em;
+    border:2px solid #fff;
+    outline: none;
+    cursor: pointer;
+    align-self: center;
+    justify-self: center;
+    border-radius: 1px;
+    transition: background-color .1s ease-in;
+    text-decoration: none;
+    color: rgb(214, 213, 226);
+}
+
+.main a:hover {
+    background-color: rgb(33, 184, 159);
+    color: #fff;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container > h1 {
+    text-align: center;
+    padding: 2.5em;
+}
+
+#info {
+    background-color: #fff;
+    color: #1f324b;
+    padding: .8em 1.8em;
+    text-align: center;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+    text-decoration: none;
+    color: #1f324b;
+}
+
+.boxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    margin: 4rem 6rem;
+    margin-bottom: 6rem;
+    padding: 2em 2em; 
+    border-radius: 10px;
+    background-color: #1b2b3f9d;
+    display: inline-block;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.3);
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: #fff;
+    color: #1f324b;
+    padding: 1em;
+    margin: 0rem 2rem;
+    border-radius: 20px;
+    margin-bottom: 4rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.3);
+}
+
+.card h3 {
+    padding: 1em;
+    text-align: center;
+}
+
+.card img {
+    border-radius: 50%;
+    width: 8em;
+    height: 8em;
+    object-fit: cover;
+    margin: 0 auto;
+    display: block;
+}
+
+footer {
+    text-align: right;
+    position: absolute;
+    bottom: 1rem;
+}
+
+/********************************contact page***************************************/
+
+.container#contact {
+    background-image: url("bluemountain.jpg");
+    background-size: cover;
+    background-color: #1b2b3f9d;
+    background-blend-mode:luminosity;
+    min-height: 100vh;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+}
+
+
+
+form#contact.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 0;
+    max-width: 600px;
+    max-height: 600px;
+}
+
+form label {
+    padding: .5em 0;
+}
+
+form input {
+    display: block;
+    width: 30vw;
+    padding: 1em;
+    margin-bottom: 20px;
+    box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.164);
+    background-color: rgb(235, 235, 235);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: 1px solid black;
+}
+
+form button {
+    background-color: rgb(0, 124, 182);
+    color: #fff;
+    outline: none;
+    border:none;
+    padding: 1em 2em;
+    cursor: pointer;
+    margin-top: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.226);
+    transition: background-color .2s ease-in-out;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: rgb(2, 90, 131);
+}
+
+form button:active {
+    transform: translateY(1px);
+}
+
+.checkbox {
+    padding: 1em 0;
+}
+
+input#check {
+    display: inline-block;
+    margin-bottom: 0;
+    width:initial;
+}
+
+#check:focus {
+    outline: none;
+}
+
+footer {
+    display: block;
+    width: 100%;
+    padding: .8em;
+}
+
+footer ul {
+    display: flex;
+    justify-content: right;
+    list-style: none;
+}
+
+footer ul li {
+    padding: 0 .8em;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/**************************************about page*********************************/
+
+.about {
+    background-image: url("bluemountain.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+
+/**************************************media**************************************/
+
+@media screen and (min-width:1200px) {
+    
+    form#contact input {
+        width: 25vw;
+   }
+}
+
+@media screen and (max-width:844px) {
+
+
+    nav ul{
+        width: 100%;
+        transition: all .5s ease-out;
+        position: absolute;
+        background-color: #1f324b;
+        right: -100%;
+        height: 100vh;
+    }
+
+    #toggle:checked~ul {
+        right: 0;
+    }
+
+    nav ul li {
+        display: flex;
+        padding: 3em 3em;
+        justify-content: center;
+        margin-right: 0;
+        height: 25%;
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        border-bottom: 1px solid #555;
+    }
+
+    nav ul li::before {
+        width: 100%;
+        height: 1px;
+    }
+
+    .hamburger {
+        display: block;
+        margin: 0;
+    }
+
+    div.top-bun {
+        margin-top: 0;
+    }
+
+    .landing p {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .main {  
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 100%;
+    }
+
+    .figures {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0 2rem;
+        align-items: end;
+        grid-gap: 5rem;
+    }
+
+    .figure {
+        padding: 1em 5em;
+        background-color: #fff;
+        color: #1f324b;
+        border-radius: 10px;
+    }
+
+    .main button {
+        background-color: rgb(33, 184, 159);
+        color: #fff;
+    }
+
+    .boxes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box {
+        width:initial;
+        margin: 4rem 1rem;
+    }
+
+    form input {
+        width: 60vw;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+
+@media screen and (max-width:750px) {
+
+
+    .one .container p {
+        font-size: 1.5rem;
+        padding: 1em;
+        text-align: center;
+    }
+
+    .svg {
+        display: flex;
+        flex-direction: column;
+        width: 70vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .one .svg svg {
+        margin-top: 2rem;
+        width: 50vw;
+        cursor: pointer;
+    }
+    
+
+}
+
+@media screen and (max-height: 460px) and (max-width: 844px) {
+
+    .main {
+        height: 100%;
+    }
+
+    nav ul {
+        width: 40%;
+        height: 100vh;
+    }
+
+    nav ul li {
+        border-right: 1px solid #fff;
+        height: 25%;
+        padding: 0;
+        margin-right: 0;
+        display: flex;
+        align-items: center;
+    }
+
+}
+
+@media screen and (max-height: 450px) and (min-width: 844px) {
+
+    #cube {
+        margin-top: 4rem;
+    }
+
+    .one .container {
+        margin-top: 0;
+    }
+
+    .two .container {
+        margin-top: 2rem;
+    }
+
+    .three .container {
+        margin-top: 5rem;
+    }
+
+    #email {
+        margin-bottom: 0;
+    }
+}
