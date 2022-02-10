@@ -220,6 +220,7 @@ nav ul li:hover a {
     border-radius: 20px;
     margin-bottom: 4rem;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,.3);
+    max-width: 20rem;
 }
 
 .card h3 {
@@ -349,7 +350,7 @@ footer ul li a {
 .about {
     background-image: url("bluemountain.jpg");
     background-size: cover;
-    height: 100vh;
+    height: 100%;
 }
 
 /**************************************media**************************************/
@@ -429,6 +430,8 @@ footer ul li a {
         background-color: #fff;
         color: #1f324b;
         border-radius: 10px;
+        max-width: 20rem;
+        justify-self: center;
     }
 
     .main button {
@@ -491,6 +494,10 @@ footer ul li a {
 
     .main {
         height: 100%;
+    }
+    
+    .landing {
+        height: 140vh;
     }
 
     nav ul {
