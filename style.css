@@ -125,7 +125,7 @@ nav ul li a {
     opacity: 0;
     transform: translateY(150px);
     transition: all ease 2s; 
-    max-width: 800px;
+    max-width: 700px;
 }
 
 .container.active {
@@ -247,7 +247,6 @@ nav ul li a {
 }
 
 .one .container {
-    width: 70vw;
     margin-top: 7rem;
     justify-content: center;
 }
