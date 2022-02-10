@@ -241,7 +241,7 @@ nav ul li:hover a {
 footer {
     text-align: right;
     position: absolute;
-    bottom: 2rem;
+    bottom: 1rem;
 }
 
 /********************************contact page***************************************/
@@ -275,7 +275,7 @@ form label {
 
 form input {
     display: block;
-    width: 25vw;
+    width: 30vw;
     padding: 1em;
     margin-bottom: 20px;
     box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.164);
@@ -359,7 +359,7 @@ footer ul li a {
 @media screen and {min-width:1200px) {
     
     form#contact input {
-        width: 500px;
+        width: 25vw;
    }
 }
 
