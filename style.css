@@ -100,7 +100,7 @@ nav ul li a {
 .main-grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 110vh 100vh 100% 100vh;
+    grid-template-rows: 110vh 100vh 100vh 100vh;
     grid-gap: 4rem;
 }
 
