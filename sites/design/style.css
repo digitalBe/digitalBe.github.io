@@ -313,10 +313,6 @@ footer ul li a {
     nav ul li {
         display: flex;
     }
-
-    .box.one {
-        height: 110%;
-    }
     
     .box {
         height: initial;
@@ -324,10 +320,6 @@ footer ul li a {
 }
 
 @media screen and (max-height: 500px) {
-
-    .box.one {
-        height: 110%;
-    }
     
     .box {
         height: initial;
