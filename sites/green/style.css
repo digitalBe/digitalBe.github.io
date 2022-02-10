@@ -25,7 +25,7 @@ header {
 nav {
     position: fixed;
     display: inline-block;
-    min-width: 100%;
+    width: 100%;
     cursor: pointer;
     display: flex;
     justify-content: end;
@@ -39,7 +39,6 @@ nav ul {
 }
 
 nav ul li {
-    padding: .8em;
     padding: .8em 0;
     margin-right: 2rem;
     display: inline-flex;
@@ -210,11 +209,12 @@ form label {
 
 form input {
     display: block;
-    width: 30vw;
+    width: 25vw;
     padding: 1em;
     margin-bottom: 20px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.164);
     border: none;
+    font-size: 16px;
 }
 
 input:focus {
@@ -231,6 +231,7 @@ form button {
     margin-top: 20px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.226);
     transition: background-color .2s ease-in-out;
+    font-size: 16px;
 }
 
 form button:hover {
@@ -269,6 +270,16 @@ footer ul li a {
 }
 
 /**********************************media*****************************************/
+
+@media screen and (min-width:1200px) {
+
+    nav ul li {
+        padding: 2em 0;
+    }
+    
+    
+    
+}
 
 @media screen and (max-width:844px) {
 
