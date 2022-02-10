@@ -409,3 +409,11 @@ footer ul li a {
         margin-bottom: 0;
     }
 }
+
+@media screen and (max-width:350px {
+
+    .maincard {
+        padding: 1em;
+    }
+
+}
