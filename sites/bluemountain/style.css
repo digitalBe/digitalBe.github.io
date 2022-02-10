@@ -265,7 +265,7 @@ form#contact.card {
     flex-direction: column;
     justify-content: center;
     margin-bottom: 0;
-    max-width: 500px;
+    max-width: 600px;
     max-height: 600px;
 }
 
