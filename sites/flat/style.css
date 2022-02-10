@@ -496,3 +496,11 @@ footer ul li a {
     }
 
 }
+
+@media screen and (max-width: 400px) {
+
+    form {
+        padding: 1em;
+    }
+
+}
