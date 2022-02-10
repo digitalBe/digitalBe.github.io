@@ -207,7 +207,7 @@ form {
     grid-template-rows: auto .8rem 3rem .8rem 3rem auto;
     margin: 1rem 2.5rem;
     grid-gap: 1rem;
-    max-width: 920px;
+    max-width: 900px;
 }
 
 form input {
@@ -343,11 +343,11 @@ footer ul li a {
 
 @media screen and (min-width:1200px) {
     .box {
-        grid-column: 2/6;
+        grid-column: 2/5;
     }
     
     form {
-        grid-column: 2/6;
+        grid-column: 2/5;
     }
 }
 
