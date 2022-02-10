@@ -355,12 +355,6 @@ footer ul li a {
 
 /**************************************media**************************************/
 
-@media screen and (min-width:1200px) {
-    
-    form#contact input {
-        width: 25vw;
-   }
-}
 
 @media screen and (max-width:844px) {
 
