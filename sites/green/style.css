@@ -132,11 +132,6 @@ nav a {
     padding: 4em; 
 }
 
-.maincard {
-    max-width: 500px;
-}
-
-
 .maincard h1 {
     padding-bottom: .5em;
 }
@@ -280,7 +275,7 @@ footer ul li a {
     }
     
     .main .svg {
-        width: 20vw;
+        width: 15vw;
     }
     
     .one .svg svg {
