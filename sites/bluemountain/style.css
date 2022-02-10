@@ -354,6 +354,13 @@ footer ul li a {
 
 /**************************************media**************************************/
 
+@media screen and {min-width: 1200px) {
+    
+    form input {
+    width: 500px;
+   }
+}
+
 @media screen and (max-width:844px) {
 
 
