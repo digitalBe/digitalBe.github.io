@@ -94,6 +94,7 @@ nav a {
     opacity: 0;
     transform: translateY(150px);
     transition: all ease 2s; 
+    max-width: 1000px;
 }
 
 .card.active {
@@ -119,6 +120,7 @@ nav a {
     min-height: 100vh;
     background-color: #000;
     margin: 1rem;
+    max-width: 1000px;
 }
 
 .two p {
