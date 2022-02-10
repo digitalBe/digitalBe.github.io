@@ -267,6 +267,10 @@ footer ul li a {
         justify-self: center;
         align-self: center;
     }
+    
+    .wrapper {
+        scroll-snap-type: none;
+    }
 
     form {
         grid-template-columns: 1fr;
@@ -323,5 +327,9 @@ footer ul li a {
     
     .box {
         height: initial;
+    }
+    
+    .wrapper {
+        scroll-snap-type: none;
     }
 }
