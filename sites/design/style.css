@@ -10,10 +10,6 @@ body {
     position: relative;
 }
 
-h1 {
-    margin-right: 2rem;
-}
-
 p {
     font-weight:lighter;
     letter-spacing: 2px;
@@ -74,7 +70,6 @@ nav a {
     grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;
     align-items: center;
-    margin: 1rem;
 }
 
 .image {
@@ -310,5 +305,23 @@ footer ul li a {
 
     #submit {
         grid-row: 8 /9;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    
+    nav ul li {
+        display: flex;
+    }
+
+    .box.one {
+        height: 110%;
+    }
+}
+
+@media screen and (max-height: 500px) {
+
+    .box.one {
+        height: 110%;
     }
 }
