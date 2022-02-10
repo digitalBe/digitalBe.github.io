@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <input id="toggle" type="checkbox"></input>
+            <label for="toggle" class="hamburger">
+                <div class="top-bun"></div>
+                <div class="meat"></div>
+                <div class="bottom-bun"></div>
+            </label>
+            <ul id="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main-grid">
+        <div class="box" id="home">
+            <div class="circles">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+            <div id="cube">
+                <h1>Digital</h1>
+                <h1>Be</h1>
+            </div>
+        </div>
+        <div class="box one" id="about">
+            <div class="container">
+                <h1>About me</h1>
+                <p>I'm a passionate web developer with focus on creating a unique and smooth UI/UX. In my work, I use vanilla Javascript or frontend frameworks like Vue and React. I base backend on PHP or node.js.</p>
+            </div>
+        </div>
+        <div class="box two" id="work">
+            <div class="container">
+                <h1>Work</h1>
+                <div class="wrapper">
+                    <a href="sites/green/index.html"><span class="card"></span></a>
+                    <a href="sites/bluemountain/index.html"><span class="card"></span></a>
+                    <a href="sites/flat/index.html"><span class="card"></span></a>
+                    <a href="sites/qtag/index.html"><span class="card"></span></a>
+                    <a href="sites/design/index.html"><span class="card"></span></a>
+                    <a href="sites/slider/index.html"><span class="card"></span></a>
+                </div>
+            </div>
+        </div>
+        <div class="box three" id="contact">
+            <div class="container">
+                <h1>Contact</h1>
+                <p id="email">as.digitalB@protonmail.com</p>
+            </div>
+        </div>
+        <footer>
+            <p>&#169; All rights reserved</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
