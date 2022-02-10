@@ -1,0 +1,396 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    color: aliceblue;
+    position: relative;
+    scroll-snap-type: y mandatory;
+
+}
+
+h1 {
+    margin-right: 2rem;
+}
+
+header {
+    color: #fff;
+}
+
+nav {
+    position: fixed;
+    display: inline-block;
+    min-width: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: end;
+    background-color: #fff;
+    color: #555;
+    z-index: 5;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    padding: .8em;
+    padding: .8em 0;
+    margin-right: 2rem;
+    display: inline-flex;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+nav ul li a:hover {
+    color: #000;
+}
+
+nav a {
+    align-items: center;
+    display: flex;
+    color: #555;
+    text-decoration: none;
+}
+
+#toggle {
+    display: none;
+}
+
+.hamburger {
+    z-index: 5;
+    cursor: pointer; 
+    align-self: center;
+    display: none
+}
+
+.hamburger div {
+    position: relative;
+    width: 2em;
+    height: 1px;
+    margin-top: 7px;
+    margin-right: 2rem;
+    transition: all 0.3s ease-in-out;
+    background-color: #555;
+}
+
+.hamburger div:nth-child(1) {
+    margin-top: 0;
+}
+
+#toggle:checked + .hamburger .top-bun {
+    transform: rotate(-45deg);
+    margin-top: 7px;
+  }
+  #toggle:checked + .hamburger .bottom-bun {
+    opacity: 0;
+    transform: rotate(45deg);
+  }
+  #toggle:checked + .hamburger .meat {
+    transform: rotate(45deg);
+    margin-top: -1px;
+  }
+
+/*********************************main***************************************/
+
+
+
+.box {
+    min-height: 100vh;
+    scroll-snap-align: start;
+}
+
+.main {
+    background-color: #dcdde1;
+    background-image: url("green-min.jpg");
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.main .svg {
+    width: 20vw;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow:6px 6px 0px 6px #fff;
+    border-bottom: 1px solid rgb(160, 160, 160);
+    border-right: 1px solid rgb(197, 197, 197);
+}
+
+.main .svg svg {
+    transition: transform 10s ease;
+}
+
+.card, .maincard {
+    padding: 4em; 
+}
+
+
+.maincard h1 {
+    padding-bottom: .5em;
+}
+
+.card {
+    opacity: 0;
+    transform: translateX(150px);
+    transition: all ease 2s; 
+}
+
+.card.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.one .svg {
+    display: flex;
+    width: 70vw;
+}
+
+.one .svg svg {
+    width: 100vw;
+    cursor: pointer;
+}
+
+.svg p {
+    padding: 2em;
+}
+
+.box {
+    padding: 1em;
+   
+}
+
+.box:nth-of-type(2) {
+    min-height: 100%;
+    background-color: #2f3640;
+    background-image: url("blueforest.jpg");
+    background-blend-mode:multiply;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    overflow: hidden;
+    padding: 5em 1em;
+}
+
+.box:nth-of-type(3) {
+    min-height: 100vh;
+    background-color: #2f3640;
+    background-image: url("treesky.jpg");
+    background-blend-mode:luminosity;
+    background-size: cover;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+form label {
+    padding: .5em 0;
+}
+
+form input {
+    display: block;
+    width: 30vw;
+    padding: 1em;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.164);
+    border: none;
+}
+
+input:focus {
+    outline: 1px solid black;
+}
+
+form button {
+    background-color: rgb(0, 124, 182);
+    color: #fff;
+    outline: none;
+    border:none;
+    padding: 1em 2em;
+    cursor: pointer;
+    margin-top: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.226);
+    transition: background-color .2s ease-in-out;
+}
+
+form button:hover {
+    background-color: rgb(2, 90, 131);
+}
+
+form button:active {
+    transform: translateY(1px);
+}
+
+/************************************footer***********************************/
+
+footer {
+    z-index: 10;
+    background-color: #fff;
+    width: 100%;
+    scroll-snap-align: start;
+    height: 10vh;
+}
+
+footer ul {
+    display: flex;
+    justify-content: right;
+    list-style: none;
+    background-color: #fff;
+    padding: 2em;
+}
+
+footer ul li {
+    padding: .8em;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #555;
+}
+
+/**********************************media*****************************************/
+
+@media screen and (max-width:844px) {
+
+    .main {
+        height: 100vh;
+        grid-template-columns: 1fr;
+    
+    }
+
+    .card {
+        padding: .4em;
+    }
+
+    nav ul{
+        width: 100%;
+        transition: all .5s ease-out;
+        position: absolute;
+        background-color: #fff;
+        right: -100%;
+        height: 100vh;
+    }
+
+    #toggle:checked~ul {
+        right: 0;
+    }
+
+    nav ul li {
+        display: flex;
+        padding: 3em 3em;
+        justify-content: center;
+        margin-right: 0;
+        height: 25%;
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        border-bottom: 1px solid #555;
+    }
+
+    nav ul li::before {
+        width: 100%;
+        height: 1px;
+    }
+
+    .hamburger {
+        padding: 1em;
+        display: block;
+    }
+
+    form input {
+        width: 60vw;
+    }
+    
+}
+
+@media screen and (max-width:750px) {
+
+
+    .one .container p {
+        font-size: 1.5rem;
+        padding: 1em;
+        text-align: center;
+    }
+
+    .svg {
+        display: flex;
+        flex-direction: column;
+        width: 70vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .one .svg svg {
+        margin-top: 2rem;
+        width: 50vw;
+        cursor: pointer;
+    }
+    
+
+}
+
+@media screen and (max-height: 460px) and (max-width: 844px) {
+
+    .main {
+        height: 100%;
+    }
+
+    nav ul {
+        width: 40%;
+        height: 100vh;
+    }
+
+    nav ul li {
+        border-right: 1px solid #fff;
+        height: 25%;
+        padding: 0;
+        margin-right: 0;
+        display: flex;
+        align-items: center;
+    }
+
+}
+
+@media screen and (max-height: 450px) and (min-width: 844px) {
+
+    #cube {
+        margin-top: 4rem;
+    }
+
+    .one .container {
+        margin-top: 0;
+    }
+
+    .two .container {
+        margin-top: 2rem;
+    }
+
+    .three .container {
+        margin-top: 5rem;
+    }
+
+    #email {
+        margin-bottom: 0;
+    }
+}

@@ -1,0 +1,311 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    color: aliceblue;
+    position: relative;
+}
+
+h1 {
+    margin-right: 2rem;
+}
+
+p {
+    font-weight:lighter;
+    letter-spacing: 2px;
+}
+
+nav {
+    background-color:transparent;
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: end;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    padding: .2em .5em;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    display: inline-flex;
+    flex-direction: row;
+    position: relative;
+    background-color: rgb(18, 187, 164);
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li:nth-child(4) {
+    margin-right: 5rem;
+}
+
+nav a {
+    align-items: center;
+    display: flex;
+}
+
+.wrapper {
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+.box {
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+.main {
+    background-color: #000000;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    align-items: center;
+    margin: 1rem;
+}
+
+.image {
+    background-image: url("man.jpg");
+    background-size: cover;
+    height: 90vh;
+    margin: 2rem;
+    object-fit: cover;
+}
+
+.card, .maincard {
+    align-items: center;
+    padding: 2em; 
+}
+
+.card {
+    opacity: 0;
+    transform: translateY(150px);
+    transition: all ease 2s; 
+}
+
+.card.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.box {
+    display: grid;
+    align-items: center;   
+    grid-template-columns: 1fr 1fr;
+}
+
+.one {
+    color: #000;
+}
+
+.two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #000;
+    margin: 1rem;
+}
+
+.two p {
+    padding: 2em 1em;
+}
+
+form {
+    grid-column: 1 / 6;
+    background-color:var(--box-bg-color);
+    color: #2f3640;
+    padding: 4em; 
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto .8rem 3rem .8rem 3rem auto;
+    margin: 1rem 2.5rem;
+    grid-gap: 1rem;
+}
+
+form input, form h1, label, #submit {
+    letter-spacing: 2px;
+}
+
+form input {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #222;
+    font-size: 20px;
+}
+
+form h1 {
+    grid-row: 1 / 2;
+    grid-column: 1 / 3;
+    margin-bottom: 3rem;
+    margin-right: 0;
+    text-align: center;
+}
+
+#label1 {
+    grid-column: 1 / 2;
+}
+
+#label2 {
+    grid-column: 2 /3;
+}
+
+#label3 {
+    grid-column: 1 /3;
+}
+
+#label1, #label2 {
+    grid-row: 2 / 3;
+}
+
+input#email {
+    grid-column: 1 / 3;
+}
+
+#submit {
+    grid-column: 1 / 3;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: .2ms ease-in-out;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-bottom: .8rem;
+}
+
+#submit:hover {
+    background-color: rgb(41, 41, 41);
+}
+
+#submit:active {
+    transform: translateY(2px);
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+    padding: .5em;
+}
+
+footer ul {
+    display: flex;
+    justify-content: right;
+    list-style: none;
+}
+
+footer ul li {
+    padding: .8em;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+@media screen and (max-width:844px) {
+
+    header {
+        position: relative;
+    }
+
+    nav {
+        position: absolute;
+    }
+
+    .wrapper {
+        height: 110vh;
+    }
+
+    .main {
+        grid-template-columns: 1fr;
+        margin: 1rem;
+        height: 110vh;
+    }
+
+    .image {
+        max-height: 50vh;
+    }
+
+    .card {
+        padding: 1em;
+    }
+}
+
+@media screen and (max-width:600px) {
+
+    nav {
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    nav ul li {
+        padding: 0;
+        margin-right: 0;
+        justify-self: center;
+        align-self: center;
+    }
+
+    nav ul li a {
+        justify-self: center;
+        align-self: center;
+    }
+
+    form {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto .8rem 3rem .8rem 3rem .8rem 3rem auto;
+        justify-content: center;
+        align-items: center;
+        grid-gap: 1rem 0;
+        margin: 1rem;
+        padding: 1em;
+    }
+
+    #label1, #label2, #label3, input, #submit {
+        grid-column: 1 / 2;
+    }
+
+    #label1 {
+        grid-row: 2 / 3;
+    }
+    
+    #label2 {
+        grid-row: 4 / 5;
+    }
+
+    #lname {
+        grid-row: 5 / 6;
+    }
+    
+    #label3 {
+        grid-row: 6 / 7;
+    }
+    
+    input#email {
+        grid-row: 7 / 8;
+        grid-column: 1/2;
+    }
+
+    #submit {
+        grid-row: 8 /9;
+    }
+}
