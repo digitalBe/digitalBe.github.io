@@ -100,7 +100,7 @@ nav ul li a {
 .main-grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 110vh 100vh 100vh 100vh;
+    grid-template-rows: 110vh 100vh 100% 100vh;
     grid-gap: 4rem;
 }
 
@@ -392,8 +392,10 @@ footer {
 /***********************************media****************************************/
 
 @media screen and (min-width:1000px) {
-    
-    grid-template-rows: 110vh 100vh 100vh 100vh;
+     
+    .main-grid {
+        grid-template-rows: 110vh 100vh 100vh 100vh;
+    }
 
 @media screen and (max-width:844px) {
 
