@@ -338,7 +338,7 @@ footer ul li a {
 @media screen and (max-height: 500px) and (max-width: 844px) {
     
     .image {
-        height: 60rem;
+        max-height: 60rem;
     }
 }
 
