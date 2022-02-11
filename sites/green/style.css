@@ -110,7 +110,7 @@ nav a {
     background-image: url("green-min.jpg");
     background-size: cover;
     background-blend-mode: multiply;
-    background-attackment: fixed;
+    background-attachment: fixed;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -174,7 +174,7 @@ nav a {
     background-image: url("blueforest.jpg");
     background-blend-mode:multiply;
     background-size: cover;
-    background-attackment: fixed;
+    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     justify-content:center;
@@ -189,7 +189,7 @@ nav a {
     background-image: url("treesky.jpg");
     background-blend-mode:luminosity;
     background-size: cover;
-    background-attackment: fixed;
+    background-attachment: fixed;
     display: flex;
     flex-direction:column;
     justify-content: center;
