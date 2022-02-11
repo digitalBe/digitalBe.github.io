@@ -205,7 +205,7 @@ form label {
 
 form input {
     display: block;
-    width: 30vw;
+    width: 20rem;
     padding: 1em;
     margin-bottom: 20px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.164);
