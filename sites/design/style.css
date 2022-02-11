@@ -333,7 +333,12 @@ footer ul li a {
         scroll-snap-type: none;
     }
     
+}
+
+@media screen and (max-height: 500px) and (max-width: 844px) {
+    
     .image {
         height: 60rem;
     }
 }
+
