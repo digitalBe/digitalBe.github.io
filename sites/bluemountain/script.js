@@ -19,5 +19,14 @@ function fadeIn() {
 }
 
 
+const menu = document.getElementById('menu');
+const closeIcon = document.getElementById("toggle");
 
+    menu.addEventListener('click', handleMenuClick);
+
+    function handleMenuClick(event) {
+      if (event.target instanceof HTMLAnchorElement) {
+        closeIcon.checked = false;
+      }
+    }
 
