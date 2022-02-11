@@ -57,6 +57,12 @@ nav a {
     height: 100vh;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.wrapper::-webkit-scrollbar {
+  display: none;
 }
 
 .box {
