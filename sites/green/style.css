@@ -120,9 +120,6 @@ nav a {
     margin: 0 auto;
     background-color: #fff;
     border-radius: 20px;
-    box-shadow:6px 6px 0px 6px #fff;
-    border-bottom: 1px solid rgb(160, 160, 160);
-    border-right: 1px solid rgb(197, 197, 197);
 }
 
 .main .svg svg {
@@ -208,7 +205,7 @@ form label {
 
 form input {
     display: block;
-    width: 25vw;
+    width: 30vw;
     padding: 1em;
     margin-bottom: 20px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.164);
@@ -415,6 +412,10 @@ footer ul li a {
 
     .maincard {
         padding: 1em;
+    }
+    
+    form input {
+        width: 80vw;
     }
 
 }
