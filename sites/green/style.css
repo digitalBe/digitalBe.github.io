@@ -128,6 +128,36 @@ nav a {
     transition: transform 10s ease;
 }
 
+.main .svg:hover {
+    animation: wiggle 0.4s linear;
+}
+
+@keyframes wiggle {
+    0% {
+        transform: translateX(0px) rotate(0deg);
+    }
+
+    20% {
+        transform: translateX(-4px) rotate(-4deg);
+    }
+
+    40% {
+        transform: translateX(-2px) rotate(-2deg);
+    }
+
+    60% {
+        transform: translateX(4px) rotate(4deg);
+    }
+
+    80% {
+        transform: translateX(2px) rotate(2deg);
+    }
+
+    100% {
+        transform: translateX(0px) rotate(0deg);
+    }
+}
+
 .card, .maincard {
     padding: 4em; 
 }
