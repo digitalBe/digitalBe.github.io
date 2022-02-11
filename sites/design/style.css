@@ -332,4 +332,8 @@ footer ul li a {
     .wrapper {
         scroll-snap-type: none;
     }
+    
+    .image {
+        width: 60rem;
+    }
 }
