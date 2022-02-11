@@ -392,6 +392,10 @@ footer ul li a {
         width: 100%;
         height: 1px;
     }
+    
+    nav ul li:last-of-type::before {
+        display: none;
+    }
 
     .hamburger {
         display: block;
@@ -509,6 +513,10 @@ footer ul li a {
         margin-right: 0;
         display: flex;
         align-items: center;
+    }
+    
+    nav ul li:last-of-type::before {
+        display: none;
     }
 
 }
