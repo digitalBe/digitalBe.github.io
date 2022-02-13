@@ -308,8 +308,16 @@ footer ul li a {
         padding: 2em 0;
     }
 
-    .maincard {
+    .maincard, .card {
         font-size: 20px;
+    }
+    
+    .card {
+        max-width: 60rem;
+    }
+    
+    .main .svg {
+        width: 15em;
     }
     
 }
