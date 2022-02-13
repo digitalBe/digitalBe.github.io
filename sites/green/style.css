@@ -380,7 +380,18 @@ footer ul li a {
 }
 
 @media screen and (max-width:750px) {
+    
+    .main {
+        background-image: url("green-xs.jpg");
+    }
+    
+    .box:nth-of-type(2) {
+        background-image: url("blueforest-xs.jpg");
+    }
 
+    .box:nth-of-type(3) {
+        background-image: url("treesky-xs.jpg");
+    }
 
     .one .container p {
         font-size: 1.5rem;
