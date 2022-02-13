@@ -118,7 +118,7 @@ nav a {
 }
 
 .main .svg {
-    width: 20vw;
+    width: 10em;
     margin: 0 auto;
     background-color: #fff;
     border-radius: 20px;
@@ -307,14 +307,6 @@ footer ul li a {
         padding: 2em 0;
     }
     
-    .main .svg {
-        width: 15vw;
-    }
-    
-    .one .svg svg {
-        width: initial;
-    }
-    
     .maincard {
         font-size: 20px;
     }
@@ -399,7 +391,7 @@ footer ul li a {
         text-align: center;
     }
 
-    .svg {
+    .one .svg {
         display: flex;
         flex-direction: column;
         width: 70vw;
@@ -469,6 +461,10 @@ footer ul li a {
 
     .maincard {
         padding: 1em;
+    }
+    
+    .main .svg {
+        width: 5em;
     }
     
     form input {
