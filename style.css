@@ -300,6 +300,9 @@ nav ul li a {
 
 .card:hover {
     box-shadow:none;
+}
+
+.wrapper a:hover {
     transform: translateY(-1px);
 }
 
