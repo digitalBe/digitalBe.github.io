@@ -283,11 +283,11 @@ nav ul li a {
 
 .wrapper a {
     border-radius: 20px;
-    transition: transform 450ms ease-out;
+    transition: transform 350ms ease-in-out;
 }
 
 .wrapper a:hover {
-    transform: translateY(1px);
+    transform: translateY(2px);
 }
 
 .wrapper a:nth-child(1) {
