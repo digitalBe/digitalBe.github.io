@@ -283,7 +283,7 @@ nav ul li a {
 
 .wrapper a {
     border-radius: 20px;
-    transition: all .1s ease-in;
+    transition: transform 450ms ease-in-out;
 }
 
 .wrapper a:hover {
