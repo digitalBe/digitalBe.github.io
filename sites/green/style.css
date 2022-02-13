@@ -40,7 +40,7 @@ nav ul {
 }
 
 nav ul li {
-    padding: 2em 0;
+    padding: 1em 0;
     margin-right: 2rem;
     display: inline-flex;
     position: relative;
@@ -126,6 +126,7 @@ nav a {
     transition: transform 10s ease;
     background-color: #fff;
     border-radius: 20px;
+    padding: .2em;
 }
 
 .main .svg:hover {
@@ -302,6 +303,10 @@ footer ul li a {
 /**********************************media*****************************************/
 
 @media screen and (min-width:1200px) {
+    
+    nav ul li {
+        padding: 2em 0;
+    }
 
     .maincard {
         font-size: 20px;
