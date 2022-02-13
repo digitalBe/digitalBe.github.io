@@ -398,6 +398,9 @@ footer ul li a {
         margin-top: 0;
     }
 
+    .image {
+        background-image: url(office-m.jpg);
+    }
 
     aside {
         grid-column: 1/6;
