@@ -476,6 +476,10 @@ input#email, input#phone {
 }
 
 @media screen and (max-width:600px) {
+    
+    .landing {
+        background-image: url('city-xs.jpg');
+    }
 
     .info {
         padding: 1em;
